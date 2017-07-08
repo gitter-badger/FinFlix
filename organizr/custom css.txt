@@ -1,0 +1,74 @@
+/* Login Button */
+button#loginSubmit {
+    background: #272B30 !important;
+}
+button#loginSubmit text {
+    color: white !important;
+}
+
+/* Forgot Password Button */
+button#switchForgot {
+    background: #63A8EB !important;
+}
+button#switchForgot text {
+    color: black !important;
+}
+/* ///////////////////////// Chat Room \\\\\\\\\\\\\\\\\\\\\\\\\ */
+  /* Page Background */
+body#chat.scroller-body {
+        background-color: #3d3d3d;
+    }
+ /* This is the color of the Chat Box background */
+        .content-box.big-box.chat.gray-bg {
+            background: #272B30 !important;
+        }
+    /* This is the Background and Border Color of the Received Messages */
+        .chat .chat-double > li.chat-inverted > .chat-panel {
+            background: purple !important;
+            border-color: #ffffff !important;
+        }
+    /* This is the color of the Received Message Direction Indicator (triangle on the side of the message box) */
+        .chat .chat-double .chat-panel.red-bg:after {
+            border-right: 9px solid purple;
+        }
+    /* This is the Background and Border Color of the Sent Messages 
+        .chat .chat-double li .chat-panel {
+            background: #ffffff !important;
+            border-color: #ffffff !important;
+        }*/
+/* This is the color of the Sent Message Direction Indicator (triangle on the side of the message box) 
+    .chat .chat-double .chat-panel.blue-bg:after {
+        border-left: 9px solid #ffffff;
+    }*/
+/* This is the color of the Message Username Text 
+    h4.pull-left.zero-m {
+        color: #ffffff;
+    }*/
+/* This is the color of the Message Date and Time Text 
+    p.pull-right {
+        color: #ffffff;
+    }*/
+/* This is the color of the Chat Message Text
+    .chat-body {
+        color: #ffffff;
+    } */
+/* This is the Background and Border Color of the Text Input Box */
+    input#message.form-control.gray-bg {
+        background: #3d3d3d !important;
+        border-color: #ffffff;
+    }
+/* This is the color of the text ("Online") and background of the Online Box Header */
+    .content-title.big-box.i-block.gray-bg {
+        background-color: #1f2125 !important;
+        color: #63A8EB !important;
+    }
+/* This is the Text and Background Color of Online Users Box */
+    div#onlineusers.big-box {
+        color: #63A8EB;
+        background: #272B30;
+    }
+/* This is the color of the Online Badge (Circle next to online user) 
+    .badge-success {
+        background: #ffffff;
+    }*/
+/* \\\\\\\\\\\\\\\\\\\\\\\\\ Chat Room ///////////////////////// */
