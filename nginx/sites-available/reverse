@@ -16,6 +16,7 @@ server {
  include /etc/nginx/snippets/strong-ssl.conf;
  ssl_certificate /etc/letsencrypt/live/server.finley.estate/fullchain.pem;
  ssl_certificate_key /etc/letsencrypt/live/server.finley.estate/privkey.pem;
+ 
  include /etc/nginx/snippets/finflix.conf;
 }
 

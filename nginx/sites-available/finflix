@@ -17,6 +17,7 @@ server {
  include /etc/nginx/snippets/strong-ssl.conf;
  ssl_certificate /etc/letsencrypt/live/finflix.net/fullchain.pem;
  ssl_certificate_key /etc/letsencrypt/live/finflix.net/privkey.pem;
+
 # reverse proxy
  include /etc/nginx/snippets/finflix.conf;
 }
