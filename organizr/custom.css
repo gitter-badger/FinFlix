@@ -3,12 +3,11 @@
 /* /////////////////////////       Begin Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
  :root {
-    --color-layerOne: #3d3d3d;
-    --color-layerTwo: #272B30;
-    --color-layerThree: purple;
-    --color-layerFour: #63A8EB;
+    --color-layerOne: #272361;
+    --color-layerTwo: #ed2e72;
+    --color-layerThree: #662f8f;
+    --color-layerFour: #9680bb;
     --color-layerFive: #71cde5;
-    --color-layerSix: #1f2125;
     --color-tLayerOne: #3faed4;
     --color-tLayerTwo: #ffffff;
  }
@@ -18,123 +17,156 @@
 /* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
 /* --------------------------------------------------------------------------- */
 /* /////////////////////////        Chat Room        \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
+/* /////////////////////////                         \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
+/* /////////////////////////       Begin Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
+:root {
+    --color-cLayerOne: #3d3d3d;
+    --color-cLayerTwo: #272b30;
+    --color-cLayerThree: purple;
+    --color-cLayerFour: #337ab7;
+    --color-cLayerFive: #63a8eb;
+    --color-ctLayerOne: #63a8eb;
+    --color-ctLayerTwo: #ffffff;
+}
+/* /////////////////////////                         \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
+/* /////////////////////////         End Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
+    /* Chat Page Background */
+        body#chat.scroller-body {
+            background-color: var(--color-cLayerOne);
+        }
+    /* Chat Box Background */
+        .content-box.big-box.chat.gray-bg {
+            background: var(--color-cLayerTwo) !important;
+        }
+    /* Received Messages */
+        .chat .chat-double > li.chat-inverted > .chat-panel {
+            background: var(--color-cLayerThree) !important;
+            border-color: var(--color-ctLayerTwo) !important;
+        }
+    /* Received Message Direction Indicator */
+        .chat .chat-double .chat-panel.red-bg:after {
+            border-right: 9px solid var(--color-cLayerThree);
+        }
+    /* Sent Messages */
+        .chat .chat-double li .chat-panel {
+            background: var(--color-cLayerFour) !important;
+            border-color: var(--color-ctLayerTwo) !important;
+        }
+     /* Sent Message Direction Indicator */
+        .chat .chat-double .chat-panel.blue-bg:after {
+            border-left: 9px solid var(--color-cLayerFour);
+        }
+    /* Message Username Text */
+        h4.pull-left.zero-m {
+            color: var(--color-ctLayerTwo);
+        }
+    /* Message Date and Time Text */
+        p.pull-right {
+            color: var(--color-ctLayerTwo);
+        }
+    /* Chat Message Text */
+        .chat-body {
+            color: var(--color-ctLayerTwo);
+        }
+    /* Text Input Box */
+        input#message.form-control.gray-bg {
+            background: var(--color-cLayerOne) !important;
+            border-color: var(--color-ctLayerTwo);
+        }
+    /* Online Box Header */
+        .content-title.big-box.i-block.gray-bg {
+            background-color: var(--color-cLayerTwo) !important;
+            color: var(--color-ctLayerOne) !important;
+        }
+    /* Online Box Divider Line */
+        .col-lg-2 .content-box {
+            background: var(--color-cLayerOne);
+        }
+    /* Online Users Box */
+        div#onlineusers.big-box {
+            color: var(--color-ctLayerTwo);
+            background: var(--color-cLayerTwo);
+        }
+    /* Online User Badge */
+        .badge-success {
+            background: var(--color-cLayerFive);
+        }
+/* /////////////////////////        Chat Room        \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
+/* --------------------------------------------------------------------------- */
+/* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\       Custom Module     ///////////////////////// */
+/* /////////////////////////                         \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
+/* /////////////////////////       Begin Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
+    :root {
+        --color-lLayerOne: #272b30;
+        --color-lLayerTwo: #63a8eb;
+        --color-lLayerThree: #3d3d3d;
+        --color-lLayerFour: #000000;
+        --color-ltLayerOne: #000000;
+        --color-ltLayerTwo: #ffffff;
+    }
+/* /////////////////////////                         \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
+/* /////////////////////////         End Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
+    /* Background */
+        .table-cell.text-center {
+            background: var(--color-lLayerOne);
+        }
+    /* Close Button */
+        button.close {
+            color: var(--color-ltLayerOne) !important;
+            text-shadow: 0 1px 0 grey;
+        }
+    /* Login Box Header */
+        .biggest-box {
+            background: var(--color-lLayerTwo) !important;
+        }
+    /* Login Box Header Text */
+        h1.zero-m.text-uppercase {
+            color: var(--color-ltLayerOne) !important;
+        }
+    /* Login Box */
+        .content-box {
+            color: var(--color-ltLayerTwo) !important;
+            background: var(--color-lLayerThree);
+        }
+    /* Dynamic Login Box Text Input Line */
+        .form-control.material {
+            background-image: linear-gradient(var(--color-layerFive), var(--color-layerFive)), linear-gradient(black, white);
+        }
+    /* Login Button */
+        button#loginSubmit {
+            background: var(--color-lLayerTwo) !important;
+        }
+    /* Login Button Text */
+        button#loginSubmit text {
+            color: var(--color-ltLayerTwo) !important;
+        }
+    /* Forgot Password Button */
+        button#switchForgot {
+            background: var(--color-lLayerFour) !important;
+        }
+    /* Forgot Password Button Text */
+        button#switchForgot text {
+            color: var(--color-ltLayerTwo) !important;
+        }
+/* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\       Custom Module     ///////////////////////// */
+/* --------------------------------------------------------------------------- */
+/* /////////////////////////        Home Page        \\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
-        /* Chat Page Background */
-            body#chat.scroller-body {
-                background-color: var(--color-layerOne);
-            }
-        /* Chat Box Background */
-            .content-box.big-box.chat.gray-bg {
-                background: var(--color-layerTwo) !important;
-            }
-        /* Received Messages */
-            .chat .chat-double > li.chat-inverted > .chat-panel {
-                background: var(--color-layerThree) !important;
-                border-color: var(--color-tLayerTwo) !important;
-            }
-        /* Received Message Direction Indicator */
-            .chat .chat-double .chat-panel.red-bg:after {
-                border-right: 9px solid var(--color-layerThree);
-            }
-        /* Sent Messages
-            .chat .chat-double li .chat-panel {
-                background: var(--color-layerFour) !important;
-                border-color: var(--color-layerFour) !important;
-            }*/
-        /* Sent Message Direction Indicator 
-            .chat .chat-double .chat-panel.blue-bg:after {
-                border-left: 9px solid var(--color-layerFour);
-            }*/
-        /* Message Username Text */
-            h4.pull-left.zero-m {
-                color: var(--color-tLayerTwo);
-            }
-        /* Message Date and Time Text */
-            p.pull-right {
-                color: var(--color-tLayerTwo);
-            }
-        /* Chat Message Text */
-            .chat-body {
-                color: var(--color-tLayerTwo);
-            }
-        /* Text Input Box */
-            input#message.form-control.gray-bg {
-                background: var(--color-layerOne) !important;
-                border-color: var(--color-tLayerTwo);
-            }
-        /* Online Box Header */
-            .content-title.big-box.i-block.gray-bg {
-                background-color: var(--color-layerSix) !important;
-                color: var(--color-layerFour) !important;
-            }
-        /* Online Box Divider Line */
-            .col-lg-2 .content-box {
-                background: var(--color-layerOne);
-            }
-        /* Online Users Box */
-            div#onlineusers.big-box {
-                color: var(--color-LayerFour);
-                background: var(--color-layerTwo);
-            }
-        /* Online User Badge 
-            .badge-success {
-                background: var(--color-layerFive);
-            }*/
-    /* /////////////////////////        Chat Room        \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
-    /* --------------------------------------------------------------------------- */
-    /* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
-        /* Background */
-            .table-cell.text-center {
-                background: var(--color-layerOne);
-            }
-        /* Close Button */
-            button.close {
-                color: var(--color-tLayerOne) !important;
-                text-shadow: 0 1px 0 grey;
-            }
-        /* Login Box Header */
-            .biggest-box {
-                background: var(--color-layerTwo) !important;
-            }
-        /* Login Box Header Text */
-            h1.zero-m.text-uppercase {
-                color: var(--color-tLayerOne) !important;
-            }
-        /* Login Box 
-            .content-box {
-                color: var(--color-tLayerTwo) !important;
-                background: var(--color-layerTwo);
-            }*/
-        /* Dynamic Login Box Text Input Line */
-            .form-control.material {
-                background-image: linear-gradient(var(--color-layerFive), var(--color-layerFive)), linear-gradient(white, white);
-            }
-        /* Login Button */
-            button#loginSubmit {
-                background: var(--color-layerTwo) !important;
-            }
-        /* Login Button Text */
-            button#loginSubmit text {
-                color: var(--color-tLayerTwo) !important;
-            }
-        /* Forgot Password Button */
-            button#switchForgot {
-                background: var(--color-layerFour) !important;
-            }
-        /* Forgot Password Button Text */
-            button#switchForgot text {
-                color: black !important;
-            }
-    /* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
-    /* --------------------------------------------------------------------------- */
-    /* /////////////////////////        Home Page        \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
-        /* Main Menu Text */
-            .profile-usermenu ul li a {
-                color: var(--color-tLayerTwo);
-            }
-    /* /////////////////////////        Home Page        \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+    /* Main Menu Text */
+        .profile-usermenu ul li a {
+            color: var(--color-tLayerTwo);
+        }
+/* /////////////////////////        Home Page        \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
