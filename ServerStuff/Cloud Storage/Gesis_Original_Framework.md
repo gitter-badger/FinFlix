@@ -89,7 +89,7 @@ The script makecache will create a cache of 0 byte files residing under your cac
 Sonarr/Radarr/Sickbeard/Couchpotato/Mylar/Headphones/Lidarr/etc... should all be configured to store their libraries under your `cached_media_dir` to reduce API usage.
 Configuring Plex Media Server
 
-You should store your libraries in subdirectories for each type of media "TV/Movies/etc.." and Plex should access them from your plex_media_dir. This is a union mount which combines both local and remote directories (prioritizing local access first).
+You should store your libraries in subdirectories for each type of media "TV/Movies/etc.." and Plex should access them from your `plex_media_dir`. This is a union mount which combines both local and remote directories (prioritizing local access first).
 ## Automatically Running Scripts
 
 All of these scripts are designed to do single tasks and are best run from cron at regular intervals. You should only every need to run mount.remote on reboot of your server, but cloudupdate, rmlocal, and makecache should be run at regular intervals. If you choose to do so, scanlibraries should also be run regularly to update your plex library [though if you are using plexdrive, this isn't needed].
@@ -101,7 +101,7 @@ For an example, these are the relevant settings from my crontab file:
 */17 * * * * /home/gesis/bin/rmlocal &>> ~/logs/nukedupes.log
 ```
 This remounts everything on reboot, tries to upload locally stored files every hour, and attempts to delete already uploaded files every 17 minutes, while updating my "fake" cache once a day.
-Answers to Frequently Asked Questions
+## Answers to Frequently Asked Questions
 
 ### Q: Plex can't see my files?
 A: Likely, you are running plex under a different user than the scripts. Set allow_other=1 in the config file.
