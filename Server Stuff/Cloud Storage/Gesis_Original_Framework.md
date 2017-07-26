@@ -1,4 +1,4 @@
-[Gesis Framework[(https://www.reddit.com/r/PlexACD/comments/6bmt9s/a_framework_and_tutorial_for_configuring_your_own/)] from r/plexacd
+[Gesis Framework](https://www.reddit.com/r/PlexACD/comments/6bmt9s/a_framework_and_tutorial_for_configuring_your_own/)] from r/plexacd
 
 ## Introduction
 
@@ -43,9 +43,9 @@ When configuring some of this software, you will be prompted to visit a URL some
 `ssh -f yourvpsuser@yourvpsipordomain.com -L XXXX:yourvpsipordomain.com:XXXX -N`
 where XXXX is the port being asked for.
 This will allow you to follow the prompts using your local browser.
-Configuring Rclone
+## Configuring Rclone
 
-Follow the instructions located here, however you should provide the clientID and secret from the OAuth configuration above when prompted.
+Follow the instructions located [here](https://github.com/jonfinley/FinFlix/blob/master/Server%20Stuff/Cloud%20Storage/rclone_installation.md), however you should provide the clientID and secret from the OAuth configuration above when prompted.
 ## Configure plexdrive
 
 Run the following commands to begin plexdrive configuration.
@@ -103,22 +103,21 @@ For an example, these are the relevant settings from my crontab file:
 This remounts everything on reboot, tries to upload locally stored files every hour, and attempts to delete already uploaded files every 17 minutes, while updating my "fake" cache once a day.
 Answers to Frequently Asked Questions
 
-# Q: Plex can't see my files?
+### Q: Plex can't see my files?
 A: Likely, you are running plex under a different user than the scripts. Set allow_other=1 in the config file.
-# Q: How can I use this with Windows?
+### Q: How can I use this with Windows?
 A: Install GNU/Linux, either on bare-metal or in a VM. I don't use Windows, sorry.
-# Q: Why do you use EncFS? Isn't it broken?
+### Q: Why do you use EncFS? Isn't it broken?
 A: EncFS is the only in-kernel option for encryption which is friendly with cloud hosting (i.e. encrypting the individual files, instead of creating a large block device). It is also much faster than most of the other options (gocryptfs coming in second). This is one fewer dependency to install, works regardless of the cloud service, and isn't directly tied to any of the other pieces (unlike rclone's crypt implementation, which is no longer convenient, due to declining performance and stability of rclone mounts). While there was an audit of EncFS which showed that the authors did not follow current best-practices, there is nothing making it unsafe for the usage of storing static files on a remote server. The problems that were found concern metadata and a cryptographic weakness when there are numerous iterations of the same file encrypted with the same key. Neither of these cases are of concern when storing video which will be accessed read-only. If you are ultra-paranoid, I would just avoid cloud-storage... none of the alternatives have a favorable audit either.
-# Q: Why don't you just use rclone move?
+### Q: Why don't you just use rclone move?
 A: My aim for this project is stability. There should never be a moment when files are unavailable. To that aim, I prefer to separate upload and deletion so that the files are always available to Plex without interruption.
-# Q: Why Bash?
+### Q: Why Bash?
 A: ahem POSIX shell. The primary goal of this project is to create a solid framework for getting cloud storage and Plex working together on many different VPS providers, using POSIX shell gets around needing specific knowledge of the underlying distro, python versions, or other such minutae. A secondary goal of this project is to have the fewest number of dependencies so that disk-space isn't wasted installing a hundred different python libraries or development environments. Shell is simple, readable, and works fine. I have also been writing shell scripts for the past 20+ years, so I'm comfortable with it.
-# Q: Why do you only upload one file at a time?
+### Q: Why do you only upload one file at a time?
 A: The same reason I separate upload and deletion. Uploading a single file allows me to use better file locking so that you're not trying to upload something while reading it. If you need to populate your cloud library quickly, use rclone copy/move/sync for your initial upload.
-# Q: Why do you use cron? Can't you use systemd/upstart/openrc/daemontools?
+### Q: Why do you use cron? Can't you use systemd/upstart/openrc/daemontools?
 I could use any of those tools to do mostly the same thing, but there is a cron implementation installed on every linux distribution, and it is usually configured to be usable by non-privileged users, unlike most of the other options.
-# Q: Thanks for your hard work. Can I buy you coffee/beer/donuts/pizza/hookers & blow?
+### Q: Thanks for your hard work. Can I buy you coffee/beer/donuts/pizza/hookers & blow?
 A: You can toss a couple bucks my way via PayPal, Bitcoin, or Litecoin.
-BTC wallet address: 17KWrRpZgoyvQ7xAcpe3QpvhNkzSeGMU3
-BTC Wallet QR
-LTC wallet address: LiVV4G3zTVdbkMsZBsGV4YvfGKB2PYUee5
+- BTC wallet address: 17KWrRpZgoyvQ7xAcpe3QpvhNkzSeGMU3
+- LTC wallet address: LiVV4G3zTVdbkMsZBsGV4YvfGKB2PYUee5
