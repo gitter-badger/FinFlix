@@ -1,4 +1,4 @@
-[Gesis Framework](https://www.reddit.com/r/PlexACD/comments/6bmt9s/a_framework_and_tutorial_for_configuring_your_own/)] from r/plexacd
+[Gesis Framework](https://www.reddit.com/r/PlexACD/comments/6bmt9s/a_framework_and_tutorial_for_configuring_your_own/) from r/plexacd
 
 ## Introduction
 
