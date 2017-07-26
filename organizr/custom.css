@@ -1,172 +1,57 @@
-/* /////////////////////////     CAKE* by leram84    \\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
-/* /////////////////////////       Begin Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
- :root {
-    --color-layerOne: #272b30;
-    --color-layerTwo: #3d3d3d;
-    --color-layerThree: #1f2125;
-    --color-layerFour: #333333;
-    --color-layerFive: #63a8eb;
-    --color-tLayerOne: #63a8eb;
-    --color-tLayerTwo: #ffffff;
- }
-/* /////////////////////////                         \\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
-/* /////////////////////////         End Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
-/* --------------------------------------------------------------------------- */
-/* /////////////////////////        Chat Room        \\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
-/* /////////////////////////                         \\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
-/* /////////////////////////       Begin Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
-:root {
-    --color-cLayerOne: #3d3d3d;
-    --color-cLayerTwo: #272b30;
-    --color-cLayerThree: purple;
-    --color-cLayerFour: #337ab7;
-    --color-cLayerFive: #63a8eb;
-    --color-ctLayerOne: #63a8eb;
-    --color-ctLayerTwo: #ffffff;
-}
-/* /////////////////////////                         \\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
-/* /////////////////////////         End Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
-    /* Chat Page Background */
-        body#chat.scroller-body {
-            background-color: var(--color-cLayerOne);
+/* /////////////////////////         Custom          \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
+    /* /////////////////////////       Begin Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
+        :root {
+        /* This block is for the Homepage */
+            --color-layerOne: #272b30;
+            --color-layerTwo: #3d3d3d;
+            --color-layerThree: #1f2125;
+            --color-layerFour: #333333;
+            --color-layerFive: #63a8eb;
+            --color-tLayerOne: #63a8eb;
+            --color-tLayerTwo: #ffffff;
+    /* This block is for the Login Page */
+            --color-loginLayerOne: #272b30;
+            --color-loginLayerTwo: #63a8eb;
+            --color-loginLayerThree: #3d3d3d;
+            --color-loginLayerFour: #000;
+            --color-loginLayerFive: ##63a8eb;
+            --color-chatTLayerOne: #71cde5;
+            --color-chatTLayerTwo: #ffffff;
+    /* This block is for the Chat Page */
+            --color-chatLayerOne: #3d3d3d;
+            --color-chatLayerTwo: #272b30;
+            --color-chatLayerThree: purple;
+            --color-chatLayerFour: #337ab7;
+            --color-chatLayerFive: #63a8eb;
+            --color-chatTLayerOne: #63a8eb;
+            --color-chatTLayerTwo: #ffffff;
+    /* This block is for all the Settings and popup windows */
+            --color-extraLayerOne: #272b30;
+            --color-extraLayerTwo: #3d3d3d;
+            --color-extraLayerThree: #6495ED;
+            --color-extraLayerFour: #9680bb;
+            --color-extraLayerFive: #6495ED;
+            --color-extraTLayerOne: #FFFFFF;
+            --color-extraTLayerTwo: #ffffff;
+    /* This block is for the Calendar Color Codes */
+            --color-calAvailable: #3A9E74;
+            --color-calUnavailable: #664E84;
+            --color-calUnreleased: #355E9A;
+            --color-calPremier: #2E8092;
         }
-    /* Chat Box Background */
-        .content-box.big-box.chat.gray-bg {
-            background: var(--color-cLayerTwo) !important;
-        }
-    /* Received Messages */
-        .chat .chat-double > li.chat-inverted > .chat-panel {
-            background: var(--color-cLayerThree) !important;
-            border-color: var(--color-ctLayerTwo) !important;
-        }
-    /* Received Message Direction Indicator */
-        .chat .chat-double .chat-panel.red-bg:after {
-            border-right: 9px solid var(--color-cLayerThree);
-        }
-    /* Sent Messages */
-        .chat .chat-double li .chat-panel {
-            background: var(--color-cLayerFour) !important;
-            border-color: var(--color-ctLayerTwo) !important;
-        }
-     /* Sent Message Direction Indicator */
-        .chat .chat-double .chat-panel.blue-bg:after {
-            border-left: 9px solid var(--color-cLayerFour);
-        }
-    /* Message Username Text */
-        h4.pull-left.zero-m {
-            color: var(--color-ctLayerTwo);
-        }
-    /* Message Date and Time Text */
-        p.pull-right {
-            color: var(--color-ctLayerTwo);
-        }
-    /* Chat Message Text */
-        .chat-body {
-            color: var(--color-ctLayerTwo);
-        }
-    /* Text Input Box */
-        input#message.form-control.gray-bg {
-            background: var(--color-cLayerOne) !important;
-            border-color: var(--color-ctLayerTwo);
-        }
-    /* Online Box Header */
-        .content-title.big-box.i-block.gray-bg {
-            background-color: var(--color-cLayerTwo) !important;
-            color: var(--color-ctLayerOne) !important;
-        }
-    /* Online Box Divider Line */
-        .col-lg-2 .content-box {
-            background: var(--color-cLayerOne);
-        }
-    /* Online Users Box */
-        div#onlineusers.big-box {
-            color: var(--color-ctLayerTwo);
-            background: var(--color-cLayerTwo);
-        }
-    /* Online User Badge */
-        .badge-success {
-            background: var(--color-cLayerFive);
-        }
-/* /////////////////////////        Chat Room        \\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
-/* --------------------------------------------------------------------------- */
-/* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\       Custom Module     ///////////////////////// */
-/* /////////////////////////                         \\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
-/* /////////////////////////       Begin Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
-    :root {
-        --color-lLayerOne: #272b30;
-        --color-lLayerTwo: #63a8eb;
-        --color-lLayerThree: #3d3d3d;
-        --color-lLayerFour: #000000;
-        --color-ltLayerOne: #000000;
-        --color-ltLayerTwo: #ffffff;
-    }
-/* /////////////////////////                         \\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
-/* /////////////////////////         End Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
-    /* Background */
-        .table-cell.text-center {
-            background: var(--color-lLayerOne);
-        }
-     /* Close Button */
-        button.close {
-            color: var(--color-ltLayerOne) !important;
-            text-shadow: 0 1px 0 grey;
-        }
-    /* Login Box Header */
-            .biggest-box {
-            background: var(--color-lLayerTwo) !important;
-        }
-    /* Login Box Header Text */
-        h1.zero-m.text-uppercase {
-            color: var(--color-ltLayerOne) !important;
-        }
-    /* Login Box */
-        .content-box {
-            color: var(--color-ltLayerTwo) !important;
-            background: var(--color-lLayerThree);
-        }
-    /* Dynamic Login Box Text Input Line */
-        .form-control.material {
-            background-image: linear-gradient(var(--color-layerFive), var(--color-layerFive)), linear-gradient(black, white);
-        }
-    /* Login Button */
-        button#loginSubmit {
-            background: var(--color-lLayerTwo) !important;
-        }
-    /* Login Button Text */
-        button#loginSubmit text {
-            color: var(--color-ltLayerTwo) !important;
-        }
-    /* Forgot Password Button */
-        button#switchForgot {
-            background: var(--color-lLayerFour) !important;
-        }
-    /* Forgot Password Button Text */
-        button#switchForgot text {
-            color: var(--color-ltLayerTwo) !important;
-        }
-/* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\       Custom Module     ///////////////////////// */
-/* --------------------------------------------------------------------------- */
-/* /////////////////////////        Home Page        \\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
-    /* Main Menu Text */
-        .profile-usermenu ul li a {
-            color: var(--color-tLayerTwo);
-        }
-/* /////////////////////////        Home Page        \\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+    /* /////////////////////////         Custom          \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
+    /* /////////////////////////         End Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
+    </style>
+ <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/master/CSS/Custom/Global.css">  
+    <!-- /////////////////////////    CSS Add-On Links     \\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\     Section Below       ///////////////////////// -->
+<link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/master/Add-Ons/Rounded-DL-Tabs.css">
+
+
+    <!-- /////////////////////////    CSS Add-On Links     \\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\     Section Above       ///////////////////////// -->
+    <style>
