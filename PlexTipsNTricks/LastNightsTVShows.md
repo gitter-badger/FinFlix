@@ -13,7 +13,10 @@ I realized that this could be used as a much better way to view "DVR" - *what is
 8. Apply
 9. Click the `Add to Playlist` button, it looks like a list with a plus sign.
 10. New Playlist - `Last Nights TV Shows` - Enter!
+
+## This is what your Filter should look like!! 
 <img src="https://user-images.githubusercontent.com/23283167/28600567-bf3e9776-7180-11e7-91c0-d6ef8f6c491d.png" width="100%">
+
 You now have an auto updating, auto cleansing playlist that will keep the shows that aired *LAST* night in plex.
 
 
