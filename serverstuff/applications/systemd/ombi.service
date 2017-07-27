@@ -1,0 +1,16 @@
+[Unit]
+Description=Ombi v2
+After=syslog.target network.target
+
+[Service]
+User=plex
+Group=plex
+
+Type=simple
+ExecStart=/usr/bin/mono /opt/ombi/Ombi.exe
+TimeoutStopSec=20
+KillMode=process
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

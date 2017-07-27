@@ -1,0 +1,18 @@
+[Unit]
+Description=NZBGet Daemon
+Documentation=http://nzbget.net/Documentation
+After=rcloneMount.service
+RequiresMountsFor=/mnt/usbstorage
+
+[Service]
+User=plex
+Group=plex
+Type=forking
+ExecStart=/opt/nzbget/nzbget -c /opt/nzbget/nzbget.conf -D
+ExecStop=/opt/nzbget/nzbget -Q
+ExecReload=/opt/nzbget/nzbget -O
+KillMode=process
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

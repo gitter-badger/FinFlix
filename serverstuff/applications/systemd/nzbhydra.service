@@ -1,0 +1,16 @@
+[Unit]
+Description=NZBHydra Daemon
+Documentation=https://github.com/theotherp/nzbhydra
+After=network.target
+
+[Service]
+User=plex
+Group=plex
+Type=simple
+ExecStart=/usr/bin/python /opt/nzbhydra/nzbhydra.py --daemon --nobrowser
+TimeoutStopSec=20
+KillMode=process
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
