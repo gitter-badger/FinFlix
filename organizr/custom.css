@@ -1,4 +1,4 @@
-    /* /////////////////////////         Custom          \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* /////////////////////////         Custom          \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
     /* /////////////////////////       Begin Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
@@ -16,7 +16,7 @@
             --color-loginLayerTwo: #63a8eb;
             --color-loginLayerThree: #3d3d3d;
             --color-loginLayerFour: #000;
-            --color-loginLayerFive: ##63a8eb;
+            --color-loginLayerFive: #63a8eb;
             --color-chatTLayerOne: #71cde5;
             --color-chatTLayerTwo: #ffffff;
     /* This block is for the Chat Page */
@@ -46,7 +46,7 @@
     /* /////////////////////////         End Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
     </style>
- <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/master/CSS/Custom/Global.css">  
+<link rel="stylesheet" type="text/css" href="ajax.php?a=show-file&file=https://raw.githubusercontent.com/leram84/layer.Cake/master/CSS/Custom/Global.css">
     <!-- /////////////////////////    CSS Add-On Links     \\\\\\\\\\\\\\\\\\\\\\\\\ -->
     <!-- \\\\\\\\\\\\\\\\\\\\\\\\\     Section Below       ///////////////////////// -->
 <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/master/Add-Ons/Rounded-DL-Tabs.css">
