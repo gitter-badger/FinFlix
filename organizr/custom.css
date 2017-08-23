@@ -1,13 +1,13 @@
-/* /////////////////////////         Custom          \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* /////////////////////////         Custom          \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
     /* /////////////////////////       Begin Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
         :root {
-        /* This block is for the Homepage */
+    /* This block is for the Homepage */
             --color-layerOne: #272b30;
-            --color-layerTwo: #3d3d3d;
+            --color-layerTwo: #1f2125;
             --color-layerThree: #1f2125;
-            --color-layerFour: #333333;
+            --color-layerFour: #1f2125;
             --color-layerFive: #63a8eb;
             --color-tLayerOne: #63a8eb;
             --color-tLayerTwo: #ffffff;
@@ -20,9 +20,9 @@
             --color-chatTLayerOne: #71cde5;
             --color-chatTLayerTwo: #ffffff;
     /* This block is for the Chat Page */
-            --color-chatLayerOne: #3d3d3d;
-            --color-chatLayerTwo: #272b30;
-            --color-chatLayerThree: purple;
+            --color-chatLayerOne: #272b30;
+            --color-chatLayerTwo: #1f2125;
+            --color-chatLayerThree: #9680bb;
             --color-chatLayerFour: #337ab7;
             --color-chatLayerFive: #63a8eb;
             --color-chatTLayerOne: #63a8eb;
@@ -37,7 +37,7 @@
             --color-extraTLayerTwo: #ffffff;
     /* This block is for the Calendar Color Codes */
             --color-calAvailable: #3A9E74;
-            --color-calUnavailable: #664E84;
+            --color-calUnavailable: #474747;
             --color-calUnreleased: #355E9A;
             --color-calPremier: #2E8092;
         }
@@ -45,13 +45,19 @@
     /* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
     /* /////////////////////////         End Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
+        .content-box.box-shadow.big-box.todo-list{
+        padding: 0 !important;
+    }
     </style>
-<link rel="stylesheet" type="text/css" href="ajax.php?a=show-file&file=https://raw.githubusercontent.com/leram84/layer.Cake/master/CSS/Custom/Global.css">
+ <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/master/CSS/Custom/Global.css">  
     <!-- /////////////////////////    CSS Add-On Links     \\\\\\\\\\\\\\\\\\\\\\\\\ -->
     <!-- \\\\\\\\\\\\\\\\\\\\\\\\\     Section Below       ///////////////////////// -->
 <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/master/Add-Ons/Rounded-DL-Tabs.css">
-
-
+    <script>
+    $(document).ready(function(){
+        $("div.profile-sidebar>img").attr("src","images/organizr-logo-h.png");
+    });
+    </script>
     <!-- /////////////////////////    CSS Add-On Links     \\\\\\\\\\\\\\\\\\\\\\\\\ -->
     <!-- \\\\\\\\\\\\\\\\\\\\\\\\\     Section Above       ///////////////////////// -->
     <style>
