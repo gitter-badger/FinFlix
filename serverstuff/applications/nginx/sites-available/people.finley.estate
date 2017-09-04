@@ -1,4 +1,4 @@
-# monica - crm 
+# monica - crm ## WORK IN PROGRESS!
 server {
 
         listen 80 default_server;
