@@ -7,7 +7,7 @@
 - [homepage.html](https://github.com/jonfinley/FinFlix/blob/master/organizr/homepage.html)   
     --*Paste this into your Homepage custom HTML, it adds the buttons to the top of the page*
 - Edit your Color Tab with these settings!
-<img src="https://user-images.githubusercontent.com/23283167/28945295-e8978f48-7873-11e7-9c5a-cb3478ee414c.png" width="100%"> 
+<img src="https://user-images.githubusercontent.com/23283167/29743242-a20f93be-8a5b-11e7-807e-f279b683d78d.png" width="100%"> 
 ## Screenshots
 ### Login
 <img src="https://user-images.githubusercontent.com/23283167/28600860-c58b2084-7182-11e7-9b01-c09860c1c0f5.png" width="100%"> 
